@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+    body{
+    /* background-color:orange;
+    background-image: url("../img/hills-landscape-sunny-sky.jpg");
+    background-position: center;
+    background-repeat:repeat-x;
+    /* background-repeat: repeat-y; */
+    /* background-size: 20rem; */ 
+}
+/* group selectors */
+/* h1,h2,h3,#top, .dark, nav ul li a{
+    color:darkslateblue;
+} */
+/* menu */
+header nav{
+    background-color: rgba(0,0,0,0.766);
+    /* position: fixed; */
+}
+
+nav ul li{
+    height:3rem;
+    display: inline;
+    margin-left: 3rem;
+}
+h1{
+    /* option1 */
+    color:red;
+    /* option 2 */
+    color:#ccc;
+    /* option3 */
+    color:rgb(84, 92, 201);
+    /* option4 */
+    
+    background-color: rgba(163, 26, 175, 0.1);
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+/* DRY   :    Don't repeat yourself */
+/* traffic light */
+.traffic-light div{
+    width:5rem;
+    height:5rem;
+    border:1px solid red;
+    border-radius: 50%;width:0;
+    height:0;
+    border-left: 50px solid transparent;
+    border-bottom: 100px solid purple;
+}
+#red{
+    background-color:red;
+}
+#orange{
+    background-color: orange;
+}
+#green{
+    background-color: green;
+}
+
+/*Shapes  */
+.shapes div{
+    display: inline-block;
+    margin:3rem;
+   
+}
+.bar{
+width:50px;
+height:150px;
+border:3px solid black;
+background-color: blue;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+  }
+.square{
+border:3px solid black;
+width:150px;
+height:150px;
+background-color: green;
+}
+.circle{
+border:3px solid black;
+width:150px;
+height:150px;
+background-color:yellow;
+border-radius: 50%;
+}
+.right-triangle{
+    width:0;
+    height:0;
+    border-left: 50px solid transparent;
+    border-bottom: 100px solid purple;
+}
+.left-triangle{
+    width:0;
+    height:0;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid blue; 
+}
+/* home main */
+.something{
+    width:10rem;
+    height: 20rem;
+    background-color: deeppink;
+    margin:20rem 5rem 5rem 2rem;
+    /* border:10px solid yellow; */
+    border-width: 10px;
+    border-color: dimgray;
+    border-style: dashed;
+
+}
+h1{
+    color:black;
+    letter-spacing: 50px;
+    word-spacing: 50px;
+    
+}
+p{
+
+}
+
+/* About main */
+main img{
+    width:150px;
+    height:150px;
+    border-top: 40px black solid;
+}
