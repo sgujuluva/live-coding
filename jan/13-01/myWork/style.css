@@ -1,0 +1,24 @@
+p{
+    background-color: darkred;
+}
+div p{
+    background-color: darkseagreen;
+}
+ul li{
+    background-color: darkviolet;
+}
+nav ul li{
+    background-color: deepskyblue;
+}
+strong{
+    color:yellow;
+}
+p strong{
+    color:red;
+}
+.dark{
+    background-color: dimgray;
+}
+.light{
+    color:white;
+}
