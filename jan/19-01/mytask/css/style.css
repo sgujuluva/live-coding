@@ -55,5 +55,55 @@ p ~ span{
 }
 /* [attribute =value] selector */
 [type="submit"]{
-    
+   border:none; 
+   background-color: red;
+   color: black;
 }
+
+/* attribute containing value selector */
+[alt~="tree"]{
+    width:12rem;
+}
+
+/* attribute * selector */
+[title*="long"]{
+    border : 5px black solid;
+}
+
+form{
+    border:2px red dashed;
+}
+
+table:hover{
+    background-color: grey;
+}
+
+/* pseudo classes */
+/* visited */
+
+a:visited{
+    color:red;
+}
+a:link{
+    color:black;
+}
+
+/* focus */
+input[type="text"]:focus{
+    outline:none;
+    border:2px pink solid;
+
+}
+a:active{
+    background-color: blue;
+}
+[type="checkbox"]:checked{
+    width:3rem;
+}
+/* form:nth-child(2n) {
+    background-color: cadetblue;
+} */
+tr:nth-child(4){
+background-color: black;
+}
+
