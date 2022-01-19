@@ -47,19 +47,37 @@ span {
 p i {
   font-size: 3rem;
 }
+header li {
+  background-color: black;
+  color: wheat;
+}
 /* element>element	 Selector  
     element parent element 
     */
-
+div > p {
+  background-color: aqua;
+}
 /* element+element  Selector
     element immediately after element */
-
+div + p {
+  color: brown;
+}
 /* element1~element2 Selector 
     element preceded element */
-
+p ~ span {
+  font-size: 10rem;
+  background-color: darkcyan;
+}
 /* [attribute] Selector */
-
+[id] {
+  background-color: brown;
+}
 /* [attribute=value] Selector  */
+[type="submit"] {
+  border: none;
+  background-color: black;
+  color: aliceblue;
+}
 
 /* [attribute~=value] Selector
     containing the value */
