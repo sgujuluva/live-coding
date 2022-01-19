@@ -1,0 +1,16 @@
+img {
+  width: 500px;
+  height: 500px;
+  padding: 5rem;
+  border: 2px solid black;
+}
+.image1 img {
+  border: 2px solid red;
+  padding: 5rem 7rem 6rem 7rem;
+  transform: rotate(45deg);
+}
+
+
+
+
+

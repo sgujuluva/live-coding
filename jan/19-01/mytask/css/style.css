@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 16px;
+}
+/* element selector */
+html{
+    background-color: burlywood;
+}
+header li{
+    background-color: indigo;
+    color: ivory;
+}
+/* id selector */
+#cool{
+    color: darkblue;
+}
+/* class selector */
+.box{
+    width:3rem;
+    height: 3rem;
+    background-color: darkgrey;
+}
+/* group selector */
+p,span{
+    background-color: darkorchid;
+}
+/* element element selector */
+p i{
+    font-size: 3rem;
+}
+/* element > element */
+/* element parent element */
+div>p{
+    background-color: darkseagreen;
+}
+/* element + element 
+element immediately after element*/
+div + p{
+    color:olive;
+}
+/* element ~element 
+element preceded element*/
+p ~ span{
+    font-size: 10rem;
+    background-color: orchid;
+}
+
+/* [attribute] selector */
+[id] {
+    background-color: pink;
+}
+/* [attribute =value] selector */
+[type="submit"]{
+    
+}
