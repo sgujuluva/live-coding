@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+/* all variables/ default to be given in root */
+:root{
+    --my-color:orange;
+    --my-font-size:3rem;
+    --other-color:rgba(110,50,6,0.9);
+    --header-font-family:"Lucida sans" Geneva,verdana,sans-serif;
+    --box-width:3rem;
+    --img-height:4rem;
+}
+body{
+    color: var(--my-color);
+}
+h1{
+    border:2px var(--my-color) solid;
+}
+/* pseudo classes */
+h1::before{
+    content: "😎️";
+}
+h1::after{
+    content: "😃️";
+}
+p::first-letter{
+    color:var(--other-color);
+    font-size: calc(var(--my-font-size) * 1);
+}
+
+div{
+
+    border:2px solid black;
+}
+
+.car{
+    width:50vw;
+    height:50vh;
+    opacity: 0.1;
+}
