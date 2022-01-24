@@ -41,6 +41,7 @@ html {
 p,
 span {
   background-color: yellow;
+  
 }
 /* element element Selector
     aka element inside element 
@@ -62,6 +63,9 @@ div > p {
     element immediately after element */
 div + p {
   color: brown;
+}
+p + span{
+  color:black;
 }
 /* element1~element2 Selector 
     element preceded element */
