@@ -12,6 +12,7 @@ body {
     sans-serif;
   width: 100vw;
   height: 100vh;
+  transition: 0.2s;
 }
 /* form */
 form {
@@ -51,6 +52,42 @@ select:focus {
   height: 0;
 }
 /* The switch */
+.switch {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  /* border: 2px red dashed; */
+  margin-left: 1rem;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* border: 2px orange dashed; */
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 5rem;
+  transition: 0.4s;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  left: 0.25rem;
+  bottom: 0.35rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+}
+.switch input:checked + .slider {
+  background-color: orange;
+}
+.switch input:checked + .slider::before {
+  transform: translateX(2.5rem);
+  /* transition: 3s; */
+}
 
 /* font-awesome */
 i {
