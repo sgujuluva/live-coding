@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/" />
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-beta3-web/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
+    
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="index.js">
+<fieldset>
+    <legend>Personal info</legend>
+    <input type="text" name="fName" id="1" placeholder="your first name">
+    <input type="text" name="lName" id="2" placeholder="your last name">
+    <input type="email" name="email" id="3" placeholder="your email" required>
+
+</fieldset>
+<fieldset>
+    <legend>fav things</legend>
+    <input type="color" name="color" id="4">
+    <input type="time" name="" id="5">
+    <input type="number" min="1" max="100" id="6" required >
+    <!-- drop down list -->
+    <select name="season" id="7" >
+        <option value="summer">Summer</option>
+        <option value="Winter">Winter</option>
+        <option value="autumn">Atumn</option>
+        <option value="spring">Spring</option>
+    </select>
+    <!-- checkbox -->
+    <section class="toggle" id="8">
+        <label class="toggle-lable"> Wants more info?</label>
+        <label class="switch">
+          <input type="checkbox" name="agree" />
+          <span class="slider"></span>
+        </label>
+      </section>
+</fieldset>
+
+
+<input type="submit" value="send">
+<input type="submit" value="clear">
+    </form>
+    <i class="fas fa-home"></i>
+    <span class="fas fa-sign-in-alt"></span>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-facebook-messenger"></i>
+    &#xa9;
+    &#x261A;
 </body>
 </html>
