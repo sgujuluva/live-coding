@@ -1,7 +1,11 @@
 /* logo */
 .logo {
   flex-grow: 1;
-  align-self: center;
+  /* align-self: center; */
+  /* display: flex;
+  justify-content: flex-end; */
+  /* align-items: ; */
+  /* order: 1; */
 }
 /* .logo :nth-child(1) */
 .logo :first-child {
