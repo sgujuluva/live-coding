@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width:40rem;
+    height:30rem;
+    border:2px solid black;
+}
+
+.child{
+    width:5rem;
+    height:4rem;
+    color:white;
+    margin-left: 1rem;
+    border:2px solid black;
+}
+
+.green{
+    background-color: aquamarine;
+  
+}
+.red{
+    background-color: red;
+    order:1;
+}
+.black{
+    background-color: black;
+    order:-3;
+}
+.pink{
+    background-color: pink;
+}
+
+table{
+    width:20rem;
+    height:20rem;
+    background-color: 1px solid black;
+}
+tr,td{
+    width:2rem;
+    height:2rem;
+    background-color: 1px solid black;
+}
