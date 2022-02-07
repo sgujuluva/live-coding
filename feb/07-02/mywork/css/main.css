@@ -1,0 +1,16 @@
+.navbar{
+    grid-area: menu;
+    background-color: rgba(120,0,0,0.5);
+}
+.main-contents{
+    grid-area: intro;
+    background-color: rgba(197, 87, 182, 0.849);
+}
+.our-courses{
+    grid-area: courses;
+    background-color: rgba(179, 139, 65, 0.664);
+}
+footer{
+    grid-area: footer;
+    background-color: rgba(67, 98, 155, 0.5);
+}
