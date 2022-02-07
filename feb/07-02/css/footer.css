@@ -1,5 +1,4 @@
 /* footer */
-/* footer */
 footer {
   grid-area: footer;
   /* width: 100vw; */
@@ -30,3 +29,4 @@ footer div {
   align-items: center;
   flex-direction: column;
 }
+

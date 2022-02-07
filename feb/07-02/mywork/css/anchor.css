@@ -1,9 +1,9 @@
 a, a:link, a:visited{
     text-decoration: none;
-    color:white;
-    }
+    color:#868686;
+     }
 
 a:hover{
-    color:black;
+    color:white;
     transform: scale(2);
 }
