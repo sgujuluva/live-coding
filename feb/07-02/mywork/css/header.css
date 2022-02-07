@@ -1,37 +1,61 @@
 header{
     display:flex;
-    font-size: larger;
+     font-size: larger;
 }
-header button{
+header img{
+  
+  font-size: larger;
+  background-color: red;
+}
+ header button{
    width:5rem;
     background-color: blue;
     color:white;
-}
+} 
 .navbar{
     display:flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    flex-flow: row;
+   /*  flex-flow: row; */
     position: relative;
     width:100vw;
-    height:5vh;
+    height:5vh; 
 }
 .list-item{
     background-color: blue;
     list-style-type: none;
-    padding:0.25rem;
+   padding:0.5rem;
 }
+.subnav-text {
+    border: none;
+    background-color: inherit;
+    font-size: 1.2rem;
+    color:black;
+    font-weight: bold;
+      }
 .subnav-content{
-    display:none;
-  
+    display:none;  
 }
-.subnav:hover  .subnav-content{
+/* dropdown menu */
+.subnav:hover .subnav-content{
     display:block;
-    transition:0.5s;
-}
+    transition: all 0.5s ease-in;
+} 
 .list-item:hover {
     background-color: lightgray;
     color: orange;
-    transition: all 0.5s ease-in;
-  }
+   
+  } 
+ /* our course container */
+ .our-courses{
+   display:grid;
+   grid-template-columns: repeat(2,1fr);
+   }
+   .our-courses article{
+    background-color: white;
+    padding: 3%;
+    margin: 5%;
+    box-shadow: 3px 3px 10px gray;
+   }
+
+  
