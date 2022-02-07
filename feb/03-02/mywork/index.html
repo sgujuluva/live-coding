@@ -33,6 +33,16 @@
   <main  class="container">
     <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ab veniam veritatis aspernatur explicabo exercitationem ea, voluptates odio corrupti adipisci fugit esse eos obcaecati culpa deserunt hic architecto ipsam fugiat.</div>
   </main>
-  
+  <script>
+      let clicked="false";
+      document.querySelector(".hamburger").addEventListener("click", () =>{
+          clicked=!clicked;
+          if (clicked){
+              document.querySelector(".side-menu").style.cssText="display:block;position:absolute;top:6%;left:0;background-color:black;color:white;z-index:1;";
+          }else{
+              document.querySelector("side-menu").style.cssText="display:none;";
+          }
+      });
+  </script>
 </body>
 </html>
