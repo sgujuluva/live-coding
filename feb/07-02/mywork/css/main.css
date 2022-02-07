@@ -1,14 +1,17 @@
 .navbar{
     grid-area: menu;
     background-color: rgba(120,0,0,0.5);
+    height:100%;
 }
 .main-contents{
     grid-area: intro;
     background-color: rgba(197, 87, 182, 0.849);
+    height:100%;
 }
 .our-courses{
     grid-area: courses;
     background-color: rgba(179, 139, 65, 0.664);
+    height:100%;
 }
 footer{
     grid-area: footer;
