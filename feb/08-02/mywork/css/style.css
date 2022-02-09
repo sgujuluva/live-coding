@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.box{
+    width:3rem;
+    height:2rem;
+    background-color: aquamarine;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    0%{
+        width:10rem;
+        background-color:pink ;
+    }
+    50%{
+        width:20rem;
+        background-color:black;
+    }
+    100%{
+        width:30rem;
+        background-color:red ;
+    }
+    
+}
+
+.shape{
+    background-color: rosybrown;
+    width:3rem;
+    height:2rem;
+    animation-name: change;
+    animation-duration: 2s;
+    
+    display:block;
+}
+/* @keyframes change{ */
+  /*   0%{
+        width:10rem;
+        background-color:pink ;
+    }
+    50%{
+        width:20rem;
+        background-color:black;
+    }
+    100%{
+        width:30rem;
+        background-color:red ;
+    } */
+   /*  from{
+        display:block;
+    }
+    to{
+        
+    }
+} */
+img{
+    background-color: rosybrown;
+    width:50%;
+    height:50%;
+    animation-name: change;
+    animation-duration: 2s;
+    
+  
+}
+@keyframes change{
+   0%{
+        width:10rem;
+        background-color:pink ;
+    }
+    50%{
+        width:20rem;
+        background-color:black;
+    }
+    100%{
+        width:30rem;
+        background-color:red ;
+    } 
+}

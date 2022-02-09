@@ -12,6 +12,7 @@
     grid-area: courses;
     background-color: rgba(179, 139, 65, 0.664);
     height:100%;
+    width:100vw;
 }
 footer{
     grid-area: footer;
@@ -21,9 +22,10 @@ footer{
 /* main container */
 .main-contents{
     height:100%;
- 
+ width:100vw;
 }
 .main-contents article{
+    width:45vw;
     background-color: white;
     padding: 2%;
     display:flex;
