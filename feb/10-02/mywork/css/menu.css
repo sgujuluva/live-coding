@@ -1,10 +1,10 @@
 header nav{
+    grid-area: header;
     height:100%;
     width:100%;
     display:flex;
     justify-content: space-between;
-    border:1px dashed red;
-    }
+     }
 header ul, header form{
     display:none;
 }
