@@ -1,5 +1,9 @@
-header nav{
+
+header{
     grid-area: header;
+}
+    header nav{
+  
     height:100%;
     width:100%;
     display:flex;
@@ -25,5 +29,5 @@ header ul, header form{
     width:32vw;
     display:flex;
     align-items: center;
-
+justify-content: space-between;
 }

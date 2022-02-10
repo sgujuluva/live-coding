@@ -21,8 +21,8 @@ body{
     grid-template-columns: 1fr;
     grid-template-areas: 
     "header"
-    "banner"
+    "main"
     "slider"
-    "article"
+    "card"
     "footer";
 }
