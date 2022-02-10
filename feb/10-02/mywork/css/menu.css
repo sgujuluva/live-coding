@@ -1,0 +1,29 @@
+header nav{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    border:1px dashed red;
+    }
+header ul, header form{
+    display:none;
+}
+.hamburger{
+    width:3rem;
+    height:3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hamburger div{
+    width:2rem;
+    border:2px gray solid;
+    background-color: grey;
+}
+.menu{
+    width:32vw;
+    display:flex;
+    align-items: center;
+
+}
