@@ -1,22 +1,29 @@
 footer{
     grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    width:100vw;
+    height:100vh;
+   
+}
+footer div{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
 }
 footer > div:first-child{
-    width:100vw;
-    border:1px solid blue;
+    margin-bottom:15px;
 }
 footer > div:first-child h2{
     color:grey;
     font-size: 1.2rem;;
 }
-footer > div:last-child{
-    border:1px solid orchid;
-    width:100vw;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+footer > div:last-child ul li{
+     display:inline;
+ }
+footer > div:last-child ul li a{
+   color:gray;
+  text-decoration: none;
+  font-weight: 700;
+ 
 }
