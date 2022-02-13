@@ -20,5 +20,20 @@ border-top: 5px solid red;
     .menu{
        display:none;
          }
-      
+    .banner div:first-child img{
+         height:70vh;            
+        }
+        .banner div:last-child {
+           font-size: 1.5rem;            
+           }
+          
+    .slider div:last-child{
+        font-size: 1.5rem;            
+           }
+       .card article{
+               width:25%;
+            padding:0;
+            margin:0;
+         
+           }
 }
