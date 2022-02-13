@@ -1,0 +1,14 @@
+.slider{
+    margin-top: 10%;
+    grid-area: slider;
+    width:100%;
+    height:100%;
+    }
+.slider div:first-child img{
+        height:30%;
+        width:100%;
+    }
+.slider div:last-child{
+    margin:10%;
+        height:30%;
+    }
