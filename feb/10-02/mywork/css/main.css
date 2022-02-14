@@ -1,39 +1,89 @@
-.banner{
-    grid-area: main;
-    width:100%;
-    height:100%;
-    }
-.banner div:first-child{
-border-top: 5px solid red;
- }
-.banner div:first-child img{
-    height:30%;
-    width:100%;
+.banner {
+  grid-area: main;
+  width: 100%;
+  height: 100%;
 }
-.banner div:last-child{
-    height:20%;
+.banner div:first-child {
+  border-top: 5px solid red;
+}
+.banner div:first-child img {
+  height: 30%;
+  width: 100%;
+}
+.banner div:last-child {
+  height: 20%;
 }
 
 /* media query */
 /* tablet */
-@media only screen and (min-width:750px){
-    .menu{
-       display:none;
-         }
-    .banner div:first-child img{
-         height:70vh;            
-        }
-        .banner div:last-child {
-           font-size: 1.5rem;            
-           }
-          
-    .slider div:last-child{
-        font-size: 1.5rem;            
-           }
-       .card article{
-               width:25%;
-            padding:0;
-            margin:0;
-         
-           }
+@media only screen and (min-width: 750px) {
+  .banner div:first-child img {
+    height: 70vh;
+  }
+  .banner div:last-child {
+    font-size: 1rem;
+  }
+
+  .slider div:last-child {
+    font-size: 1rem;
+  }
+  .card {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .card article {
+    width: 33%;
+    height: 70vh;
+  }
+  .card article div:first-child img {
+    height: 25vh;
+  }
+}
+/* laptop */
+@media only screen and (min-width: 992px) {
+  .menu {
+    display: none;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header ul,
+  header form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .nav-menu ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem;
+  }
+  .menu-tablets {
+    background-color: red;
+    width: 100%;
+  }
+  .menu-tablets ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 1.6;
+  }
+  .menu-tablets ul li {
+    color: white;
+    list-style: none;
+  }
 }
