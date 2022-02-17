@@ -443,3 +443,11 @@ Defining in `:root { --[name]: [value] }`
 - Sass superpowers 
 - Sass Basics
 ### [Project Structure ](https://github.com/FbW-WD21-E11/live-coding/tree/main/feb/sass)
+
+------
+## [16.02](https://github.com/FbW-WD21-E11/live-coding/tree/main/feb/16-02) Sass structure
+### Build scripts: Using npm as a build tool
+- Installing dependencies: `npm install`
+- Running for development: `npm start`
+- Building for publication: `npm run build`
+### UIB advanced test
