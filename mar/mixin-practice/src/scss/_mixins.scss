@@ -1,16 +1,28 @@
+/* resetting */
 @mixin reset-list{
-    margin:o;
+    margin:0;
     padding:0;
     list-style:none;
 }
+/* flex */
+@mixin flex-position($justify, $align){
+    display:flex;
+    justify-content: $justify;
+    align-items:$align;
+}
+
 /* navbar */
 @mixin navbar-horizontal{
-    @include reset-list;
-    li{
-        display:inline-block;
-        margin{
-            left:2px;
-            right:2rem;
-        }
-    }
+    @include flex-position(space-around,center);
+  li{
+      @include reset-list;
+  }
+}
+/* text color */
+@mixin navbar-text($navbar-height,$text-color,$background-color){
+    height:$navbar-height;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color:$text-color;
+    background: $background-color;
 }

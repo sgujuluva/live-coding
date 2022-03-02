@@ -1,5 +1,6 @@
 @import "./mixins";
 // nav bar
 nav ul{
-    @include navbar-horizontal;
+ @include navbar-horizontal;
+ @include navbar-text(5vh,orange,blue);
 }
