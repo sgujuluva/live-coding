@@ -27,8 +27,10 @@
     background: $background-color;
 }
 /* search button */
+$box-shadow: 0 0.5rem 1rem rgb(196, 89, 89);
 @mixin search-button {
   background: orange;
+  box-shadow: $box-shadow;
     width:10%;
     height:5vh;
 }
