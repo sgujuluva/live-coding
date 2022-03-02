@@ -4,3 +4,19 @@ nav ul{
  @include navbar-horizontal;
  @include navbar-text(5vh,orange,blue);
 }
+/* search button */
+.search-btn{
+    @include flex-position(space-evenly,center);
+}
+.search-btn > button{
+    @include search-button;
+}
+/* computer-image */
+/* animations with mixins */
+span{
+    @include zoom-in;
+}
+/* search button */
+button{
+    @include zoom-out;
+}

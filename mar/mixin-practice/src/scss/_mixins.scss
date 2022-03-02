@@ -26,3 +26,51 @@
     color:$text-color;
     background: $background-color;
 }
+/* search button */
+@mixin search-button {
+  background: orange;
+    width:10%;
+    height:5vh;
+}
+/* animation for computer icon*/
+@mixin hide{
+    opacity:0;
+    visibility:hide;
+}
+@mixin reveal{
+    opacity:1;
+    visibility:visible;
+}
+@mixin zoom-in{
+    animation-name: zoom;
+    animation-duration:3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes zoom{
+    0%{
+        @include hide();
+        transform: scale(0);
+    }
+    100%{
+        @include reveal();
+        transform:scale(5);
+    }
+}
+/* animation for search icon */
+@mixin zoom-out{
+    animation-name: zoom-out;
+    animation-duration:3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes zoom-out{
+    0%{
+        @include reveal();
+        transform: scale(1);
+    }
+    100%{
+        @include hide();
+        transform:scale(0);
+    }
+}
