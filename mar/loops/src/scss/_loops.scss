@@ -1,59 +1,55 @@
-@keyframes move {
-    from {
-      transform: scaleY(1) translateY(70px) ;
+
+body{
+    background-color: slategrey;
+}
+.main-box{
+ 
+display:flex;
+justify-content: space-around;
+align-items: center;
+
+}
+@keyframes moving{
+    0%{
+        transform: scale(1);
     }
-    to {
-      transform: scaleY(1.5) translateY(-40px) ;
+    100%{
+        transform:scale(1.5);
     }
-  }
-  .main-box {
-    display: grid;
-    grid-template-columns: repeat($item-count, 1fr);
-    grid-template-rows: 1fr;
-    border:2px solid red;
-    width:90vw;
-    height: 90vh;
-    border-radius: 50%;
-  }
-  @mixin move-animation-setup($duration) {
-    animation-name: move;
-    animation-duration: $duration;
+}
+@mixin animation-moving-letters{
+    animation-name: moving;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-  @for $i from 1 through $item-count {
+    transition: 0.5s;
+}
+.items{
+    background-color: orange;
+    width:3rem;
+    height:3rem;
+    border-radius: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:grey;
+    font-weight: 900;
+ /*    @include animation-moving-letters; */
+}
+@for $i from 1 through 11{
     // hey i go form 1 to 30 and every round add by one
-    .items:nth-child(#{$i}){
-       background-color: rgba(
-        random(100),
-        random(150),
-        random(2), 
-        random(1)
-      );
-      height: 30px;
-      width:30px;
-      border-radius: 50% ;
-
+    .items:nth-child(#{$i}) {
+     
+        height: random(40) + vh;
+        border-radius: 20% 0;
       //    @if ($i % 2 0= 0)  even
       // @if ($i % 2 != 0) {
       @if ($i % 2 != 0) {
-          
-        background-color: rgba(
-          random(200) + 10,
-          random(100) + random(150),
-          random(200) + $i,
-          random(1)
-        );
-        align-self: end;
-       
+        background-color: pink;
+        
       }
-      @include move-animation-setup(random($i) + s);
+      @include animation-moving-letters;
     }
     // i + 1
   }
-  
-  // .item {
-  //   border: 2px red dashed;
-  // }
-  
+
