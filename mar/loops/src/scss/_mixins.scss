@@ -1,0 +1,7 @@
+@mixin find-div-width($map-key){
+    @if map-has-key($div-width,$map-key ){
+        width:map-get($div-width,$map-key );
+    }@else {
+        @error "#{$map-key} is not defined, please use #{map-keys($div-width)}";
+    }
+}

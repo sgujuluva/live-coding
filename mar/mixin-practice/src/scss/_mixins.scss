@@ -27,6 +27,11 @@
     background: $background-color;
 }
 /* search button */
+/* button-round */
+$radius:12px;
+@mixin btn-rounded{
+    border-radius:$radius;
+}
 $box-shadow: 0 0.5rem 1rem rgb(196, 89, 89);
 @mixin search-button {
   background: orange;
@@ -43,13 +48,22 @@ $box-shadow: 0 0.5rem 1rem rgb(196, 89, 89);
     opacity:1;
     visibility:visible;
 }
-@mixin zoom-in{
-    animation-name: zoom;
-    animation-duration:3s;
-    animation-direction: alternate-reverse;
+/* parent mixin */
+@mixin zoom($zoom,$direction){
+    animation-name:$zoom;
+    animation-duration: 3s;
+    animation-direction: $direction;
     animation-iteration-count: infinite;
 }
-@keyframes zoom{
+@mixin zoom-in {
+    @include zoom(zoom-in,alternate-reverse);
+    
+}
+@mixin zoom-out {
+    @include zoom(zoom-out,alternate-reverse);
+}
+@keyframes zoom-in {
+
     0%{
         @include hide();
         transform: scale(0);
@@ -59,8 +73,35 @@ $box-shadow: 0 0.5rem 1rem rgb(196, 89, 89);
         transform:scale(5);
     }
 }
+@keyframes zoom-out{
+    0%{
+        @include reveal();
+        transform: scale(1);
+    }
+    100%{
+        @include hide();
+        transform:scale(0);
+    }
+}
+/* @mixin zoom-in{
+    animation-name: zoom-in;
+    animation-duration:3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoom-in{
+    0%{
+        @include hide();
+        transform: scale(0);
+    }
+    100%{
+        @include reveal();
+        transform:scale(5);
+    }
+} */
 /* animation for search icon */
-@mixin zoom-out{
+/* @mixin zoom-out{
     animation-name: zoom-out;
     animation-duration:3s;
     animation-direction: alternate-reverse;
@@ -75,4 +116,4 @@ $box-shadow: 0 0.5rem 1rem rgb(196, 89, 89);
         @include hide();
         transform:scale(0);
     }
-}
+} */

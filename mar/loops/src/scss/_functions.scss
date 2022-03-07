@@ -1,0 +1,5 @@
+@function find-div-width($map-key){
+    @if map-has-key($div-width, $map-key){
+        @return map-get ($div-width,$map-key);
+    }
+}

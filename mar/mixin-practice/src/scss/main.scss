@@ -10,6 +10,7 @@ nav ul{
 }
 .search-btn > button{
     @include search-button;
+    @include btn-rounded;
 }
 /* computer-image */
 /* animations with mixins */
