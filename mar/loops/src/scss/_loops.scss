@@ -1,16 +1,19 @@
 @keyframes move {
     from {
-      transform: scaleY(1);
+      transform: scaleY(1) translateY(70px) ;
     }
     to {
-      transform: scaleY(1.5);
+      transform: scaleY(1.5) translateY(-40px) ;
     }
   }
   .main-box {
     display: grid;
     grid-template-columns: repeat($item-count, 1fr);
     grid-template-rows: 1fr;
-    height: 100vh;
+    border:2px solid red;
+    width:90vw;
+    height: 90vh;
+    border-radius: 50%;
   }
   @mixin move-animation-setup($duration) {
     animation-name: move;
@@ -21,14 +24,21 @@
   }
   @for $i from 1 through $item-count {
     // hey i go form 1 to 30 and every round add by one
-    .item:nth-child(#{$i}) {
-      background-color: lighten(orange, random(40));
+    .items:nth-child(#{$i}){
+       background-color: rgba(
+        random(100),
+        random(150),
+        random(2), 
+        random(1)
+      );
       height: 30px;
       width:30px;
       border-radius: 50% ;
+
       //    @if ($i % 2 0= 0)  even
       // @if ($i % 2 != 0) {
       @if ($i % 2 != 0) {
+          
         background-color: rgba(
           random(200) + 10,
           random(100) + random(150),
@@ -36,6 +46,7 @@
           random(1)
         );
         align-self: end;
+       
       }
       @include move-animation-setup(random($i) + s);
     }
