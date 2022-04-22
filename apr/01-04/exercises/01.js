@@ -44,6 +44,17 @@
  * ("Open sesame", "same") should return true
  */
 
+let sourceString = "Bastian";
+let targetString = "abc";
+let splittedString = sourceString.slice(-targetString.length)
+console.log(splittedString);
+
+if (splittedString === targetString){
+    console.log("the end of string is same : true");
+}else{
+    console.log("the end of string is not same : false");
+}
+
 /**
  * 06 Easy - Repeat String
  * Repeat a given string str for a number of times and print the result to the console.
@@ -54,6 +65,19 @@
  * ("abc", -2) should print ""
  */
 
+let stringToPrint = "*";
+let numberOfTimesPrint = -2;
+
+if (( stringToPrint === "") || (numberOfTimesPrint < 0)){
+    console.log("");
+}else {
+    let result = "";
+    for ( i = 0; i < numberOfTimesPrint ; i++){
+      result += stringToPrint; 
+    }
+  console.log(result)  
+}
+
 /**
  * 07 Easy - Find Sum
  * Write a function addTo that 
@@ -61,7 +85,12 @@
  * and print the result to the console.
  * Example: if the given number is 3, function addTo() should print 6  (1+2+3 = 6)
  */
-
+let numbers = 3;
+let sum = 0;
+for ( i = 1 ; i <= numbers; i++){
+    sum += i;
+}
+console.log(sum);
 /**
  * 08 Hard - Create Pattern
  * Write a function to construct the following pattern, using a nested for-loop.
@@ -74,6 +103,17 @@
 ******
 
  */
+
+let star = "*";
+let size = 6;
+
+for ( i = 0; i <size; i++ ){
+    let resultStar = "";
+    for ( j = 0; j < i ; j++ ){
+        resultStar += star;
+    }
+    console.log(resultStar)
+}
 
 /**
  * 09 medium - Filter array

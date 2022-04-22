@@ -1,0 +1,10 @@
+let myString = parseFloat("John is 20");
+console.log(myString);
+let myString1 = parseInt("384.75a");
+console.log(myString1);
+var myString2 = parseInt("77.22", 16);
+console.log(myString2);
+var myString3 = parseInt("5x77");
+console.log(myString3);
+let myString4 = Number("384");
+console.log(myString4);
