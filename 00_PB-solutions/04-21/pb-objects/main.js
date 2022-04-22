@@ -39,11 +39,16 @@ console.log(boxVolume(box1));
 
 console.log("\nTask 4:\n--------\n")
 const box2 = {
-  width: 80,
-  height: 10,
-  length: 50,
+  width: 28,
+  height: 44,
+  length: 96,
 };
 
+const box3 = {
+  width: 94,
+  height: 23,
+  length: 102,
+};
 function biggerVolume(box1, box2) {
   const box1Volume = boxVolume(box1);
   const box2Volume = boxVolume(box2);
@@ -54,4 +59,4 @@ function biggerVolume(box1, box2) {
   }
 }
 
-console.log(biggerVolume(box1, box2));
+console.log(biggerVolume(box2, box3));
