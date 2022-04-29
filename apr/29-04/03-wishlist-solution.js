@@ -133,3 +133,5 @@ updateWishlist(3, 2)
 updateWishlist(4, 1)
 updateWishlist(3, 5)
 console.log('wishlist is', wishlist)
+
+function getWishlistforUser(3)
