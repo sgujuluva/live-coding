@@ -100,5 +100,3 @@ console.log(Object.getPrototypeOf(regularUser1));
 console.log(Object.getPrototypeOf([1, 2, 3]));
 console.log(Object.getPrototypeOf(Object));
 console.log(Object.getPrototypeOf(Math));
-
-console.log(Object.getOwnPropertyNames(Object.prototype));
