@@ -53,3 +53,9 @@ console.log(Object.getOwnPropertyNames(animalPrototype));
  */
 
 console.log(Object.getOwnPropertyNames(Animal.prototype));
+
+/**
+ * Let's try doing that with a class from JavaScript
+ * 
+ */
+console.log(Object.getOwnPropertyNames(Array.prototype));
