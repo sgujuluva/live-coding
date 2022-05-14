@@ -1,4 +1,4 @@
-## The Cashier Problem 
+## 01 - The Cashier Problem 
 
 Create a program that helps a cashier give adequate change to customers. The program should return the amount of notes and coins for the customer's change. 
 
@@ -21,7 +21,7 @@ Example: Price: €4.50, Paid amount: €20, Change: 15.50
 
 ---
 
-## Pokemon Lite
+## 02 - Pokemon Lite
 
 Try to make a simplified version of pokemon!
 
@@ -109,7 +109,7 @@ bulbasaur.attack(0, pikachu);
 
 ---
 
-### Calculator.js 
+### 03 - Calculator.js 
 - A library which contains useful calculation functions based on common formulas (aspect ratio, percentage calculation, etc…)
 
 
@@ -147,7 +147,7 @@ calculate.sqrt(x) // Returns the square root of x.
 
 ---
 
-## Project
+## 04 - String-Object Project
 
 ### String
 
@@ -265,7 +265,7 @@ console.log(all_properties(Array));
 ----
 
 
-# Bulls and Cows
+# 05 - Bulls and Cows
 
 In this project we will build a two player game that is called **Bulls and Cows**.
 
@@ -361,7 +361,7 @@ A repository containing your code.
 
 ---
 
-# Shrugman
+# 06 - Shrugman
 
 Let's build another guessing game.
 One player, makes up a secret word or phrase (we will use movie titles), while the other player tries to guess the word by asking what letters it contains.
