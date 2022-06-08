@@ -16,9 +16,16 @@ const orangeBg = () => {
   box.style.backgroundColor = "orange";
 };
 // EventListeners
-box.addEventListener("click", () => console.log("cool"));
-box.addEventListener("mouseenter", orangeBg);
-box.addEventListener("mouseleave", whiteBg);
+const startBoxEvents = () => {
+  box.addEventListener("click", () => console.log("cool"));
+  box.addEventListener("mouseenter", orangeBg);
+  box.addEventListener("mouseleave", whiteBg);
+};
+const stopBoxEvents = () => {
+  box.removeEventListener("click");
+  box.removeEventListener("mouseenter");
+  box.removeEventListener("mouseleave");
+};
 
 const sayHi = () => {
   // alert("Hey, happy to have you again");
