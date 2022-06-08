@@ -6,6 +6,8 @@ const box = document.querySelector(".box");
 const h2 = document.querySelector(".result h2");
 const userData = document.querySelector("#user-name");
 const form = document.querySelector("form");
+const start = document.querySelector("#start");
+const stop = document.querySelector("#stop");
 // functions
 const whiteBg = () => {
   box.style.backgroundColor = "white";
@@ -29,4 +31,4 @@ const newUser = (e) => {
   h2.innerHTML += `${userData.value} <br>`;
 };
 form.addEventListener("submit", newUser);
-//form.addEventListener("reset",()=>);
+form.addEventListener("reset", () => (form.style.backgroundColor = "yellow"));
