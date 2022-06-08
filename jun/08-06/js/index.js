@@ -23,8 +23,8 @@ const startBoxEvents = () => {
 };
 const stopBoxEvents = () => {
   box.removeEventListener("click");
-  box.removeEventListener("mouseenter");
-  box.removeEventListener("mouseleave");
+  box.removeEventListener("mouseenter", orangeBg);
+  box.removeEventListener("mouseleave", whiteBg);
 };
 
 const sayHi = () => {
@@ -39,3 +39,5 @@ const newUser = (e) => {
 };
 form.addEventListener("submit", newUser);
 form.addEventListener("reset", () => (form.style.backgroundColor = "yellow"));
+start.addEventListener("click", startBoxEvents);
+stop.addEventListener("click", stopBoxEvents);
