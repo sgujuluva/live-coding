@@ -15,9 +15,9 @@ function getGuess() {
   return parseInt(guess);
 }
 function play() {
-  let numberToGuess = getNumber();
+  let numberToGuess = getNumber(); // number = 4
   while (true) {
-    const guess = getGuess();
+    const guess = getGuess(); // guess = 8
     if (guess === numberToGuess) {
       console.log("congratulations");
       const playAgain = prompt("Play again? Y/N ");

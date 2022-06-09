@@ -14,6 +14,11 @@ The Object.fromEntries() method transforms a list of key-value pairs into an obj
 
  /// converting object into arrays for looping conditions
 
+// Object.assign()
+
+// it merges the objects
+
+
 
  const book = {
      title : "abc",
