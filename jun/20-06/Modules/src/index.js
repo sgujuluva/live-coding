@@ -1,3 +1,8 @@
+// Start with libraries
+
+import buildTable from "./table.js";
+import buildChair from "./chair.js";
+
 // IIFE = Immediately Invoked Function Expression
 (function () {
   var userName = "Andrej";
@@ -10,3 +15,6 @@
     div.append(p);
   });
 })();
+
+console.log("table: ", buildTable());
+console.log("chair: ", buildChair());
