@@ -15,7 +15,7 @@
 // console.log("I am the last log");
 
 const div = document.getElementById("root");
-const users = ["Matt", "John", "Maria", "Steve"];
+const users = ["Matt", "John", "Maria"];
 
 function getUsers() {
   setTimeout(() => {
