@@ -56,21 +56,3 @@ function orderDrink(drink) {
 orderDrink("Orange juice")
   .then((value) => console.log(value))
   .catch((err) => console.log(err));
-
-// JSON
-const obj = {
-  name: "Luke",
-  age: 22,
-};
-
-console.log("obj: ", obj);
-
-// Convert JS to JSON
-// "{ "name": "Luke", "age": 22 }"
-const stringified = JSON.stringify(obj);
-
-console.log("stringified", stringified);
-
-const parsed = JSON.parse(stringified);
-
-console.log("parsed", parsed);
