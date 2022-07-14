@@ -1,7 +1,6 @@
 import "./App.css";
 import { useContext } from "react";
 import { CurrencyContext } from "./context/currencyContext";
-import { CURRENCIES } from "./context/currencyContext";
 
 const DATA = [
   {
@@ -17,11 +16,11 @@ const DATA = [
 ];
 
 const Book = ({ item }) => {
-  const currency = useContext(CurrencyContext);
+  const { currency } = useContext(CurrencyContext);
 
   const price = new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency: currency.code,
+    currency: currency?.code,
   }).format(item.price * currency.conversionRate);
 
   return (
@@ -32,24 +31,23 @@ const Book = ({ item }) => {
 };
 
 const App = () => {
-  const { currency, setCurrency } = useContext(CurrencyContext);
+  const { setCurrency } = useContext(CurrencyContext);
 
   return (
-    <CurrencyContext.Provider value={currency}>
+    <div>
       <CurrencyButtons onChange={setCurrency} />
-
       <ul>
         {DATA.map((item) => (
           <Book key={item.id} item={item} />
         ))}
       </ul>
-    </CurrencyContext.Provider>
+    </div>
   );
 };
 
 const CurrencyButtons = ({ onChange }) => {
-
-  return Object.values(CURRENCIES)?.map((item) => (
+  const { CURRENCIES } = useContext(CurrencyContext);
+  return Object.values(CURRENCIES).map((item) => (
     <CurrencyButton key={item.label} onClick={() => onChange(item)}>
       {item.label}
     </CurrencyButton>

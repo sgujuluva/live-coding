@@ -18,10 +18,10 @@ const CURRENCIES = {
 const CurrencyProvider = ({ children }) => {
   const [currency, setCurrency] = useState(CURRENCIES.Euro);
   return (
-    <CurrencyContext.Provider value={{ currency, setCurrency }}>
+    <CurrencyContext.Provider value={{ currency, setCurrency, CURRENCIES }}>
       {children}
     </CurrencyContext.Provider>
   );
 };
 
-export { CurrencyContext, CurrencyProvider, CURRENCIES };
+export { CurrencyContext, CurrencyProvider };
