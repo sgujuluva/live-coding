@@ -50,11 +50,11 @@ We can divide it into 3 steps:
 The first step is to write the state - that needs to be distributed - and its logic in a context provider component.
 
 ```js
-import React, { useState } from "react";
+import { useState, creatContext } from "react";
 
-const Context = React.createContext();
+const Context = createContext();
 
-export function ContextProvider(props) {
+ function ContextProvider(props) {
   const [todos, setTodos] = useState([]);
   
   const onAddTodo = (todo) => {
@@ -74,7 +74,7 @@ export function ContextProvider(props) {
   );
 }
 
-export default Context;
+export { Context, ContextProvider };
 ```
 
 (you can also include the Context Provider in another component if you want to only pass the local state of that component to its children as demonstrated in the w3schools example [here](https://www.w3schools.com/react/react_usecontext.asp))
