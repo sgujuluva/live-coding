@@ -50,7 +50,7 @@ We can divide it into 3 steps:
 The first step is to write the state - that needs to be distributed - and its logic in a context provider component.
 
 ```js
-import { useState, creatContext } from "react";
+import { useState, createContext } from "react";
 
 const Context = createContext();
 
