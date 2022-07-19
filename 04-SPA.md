@@ -301,5 +301,5 @@ Basic State Management Concepts
 - Provider and Consumer component
 - Consume the Context `useContext`
 
-## [18.07](https://github.com/FbW-WD21-E11/live-coding/tree/main/jun/14-07) Topics:
+## [18.07](https://github.com/FbW-WD21-E11/live-coding/tree/main/jun/18-07) Topics:
 - Enhance the context using a Reducer `useReducer`
