@@ -13,28 +13,12 @@
       "email": "Nathan@yesenia.net"
     },
     {
-      "name": "updatedUser",
-      "username": "lol",
-      "email": "lol@lol",
-      "id": "1"
+      "username": "I know",
+      "email": "blahblah@blah",
+      "id": "86e5gf289d"
     }
   ],
   "products": [
-    {
-      "id": "4",
-      "productName": "iPhone",
-      "price": 777
-    },
-    {
-      "id": "5",
-      "productName": "samsung",
-      "price": 555
-    },
-    {
-      "id": "6",
-      "productName": "xbox",
-      "price": 999
-    },
     {
       "productName": "playstation",
       "price": 9999,
@@ -42,8 +26,18 @@
     },
     {
       "productName": "monitor",
-      "price": 10,
+      "price": 1000,
       "id": "86e5d02408"
+    },
+    {
+      "productName": "something else",
+      "price": 1234,
+      "id": "5"
+    },
+    {
+      "productName": "somethingelse",
+      "price": "99999999",
+      "id": "6"
     }
   ]
 }
