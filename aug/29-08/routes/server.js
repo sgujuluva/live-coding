@@ -33,6 +33,11 @@ app.get("/products", (req, res) => {
   res.send(db.data.products);
 });
 
+const uid = () => {
+  return Date.now().toString(18);
+};
+
+console.log(uid())
 // endpoint 3: expects a POST request to the path localhost:8080/users/signup with a body that contains the data of the new user, adds it to the database (db.json) and then sends a response "user added successfully" to the client.
 app.post("/users/signup", async (req, res) => {
   //Create
@@ -47,7 +52,7 @@ app.post("/users/signup", async (req, res) => {
   if (checkEmail) {
     return res.send("user with this email already exists");
   }
-  newUser.id = db.data.users.length + 1; // to create an id
+  newUser.id = uid(); // to create an id
   db.data.users.push(newUser); // to add the 'newUser' to the db
 
   await db.write();
@@ -55,3 +60,38 @@ app.post("/users/signup", async (req, res) => {
   res.send("user added successfully");
 });
 
+// endpoint 4: expects a POST request to the path localhost:8080/products/add-product with a body that contains the data of the new product, adds it to the database (db.json) and then sends a response "product added successfully" to the client.
+app.post("/products/add-product", async (req, res) => {
+  //Create
+  console.log(req.body);
+
+  let newProduct = req.body;
+
+  newProduct.id = uid(); // to create an id
+  db.data.products.push(newProduct); // to add the 'newProduct' to the db
+
+  await db.write();
+
+  res.send("product added successfully");
+});
+
+
+
+app.put("/users/edit-user/:id", async (req, res)=>{
+//Update
+
+console.log(req.body);
+
+  let updatedUsersArr = db.data.users.filter(user=>user.id !== req.params.id);
+
+  let updatedUser = req.body;
+      updatedUser.id = req.params.id;
+
+      updatedUsersArr.push(updatedUser);
+
+      db.data.users = updatedUsersArr;
+
+      await db.write();
+
+      res.send(db.data.users);
+})
