@@ -7,7 +7,6 @@ export default function Signup() {
   const [checkPassword, setCheckPassword] = useState(false);
 
   const handleChange = (e) => {
-    console.log(e.target);
     setUser((prev) => ({ ...prev, [e.target.placeholder]: e.target.value }));
   };
 
