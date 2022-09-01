@@ -2,20 +2,19 @@ import React from "react";
 import { useState } from "react";
 //import axios from "axios"
 
-export default function Signup() {
-  const [user, setUser] = useState({ username: "", email: "", password: "" });
-  const [checkPassword, setCheckPassword] = useState(false);
+export default function Login() {
+  const [user, setUser] = useState({ email: "", password: "" });
+
 
   const handleChange = (e) => {
     console.log(e.target);
     setUser((prev) => ({ ...prev, [e.target.placeholder]: e.target.value }));
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (checkPassword) {
-      fetch("http://localhost:5000/api/signup", {
+
+      fetch("http://localhost:5000/api/login", {
         method: "POST",
         body: JSON.stringify(user),
         headers: {
@@ -26,20 +25,13 @@ export default function Signup() {
         .then((data) => console.log(data));
       // {user: userObj, msg: "user added to db", success: true}
 
-      //const data = await axios("http://localhost:5000/api/signup", user)
-    }
+      //axios.post("http://localhost:5000/api/login", user)
+    
   };
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <div>username:</div>
-        <input
-          onChange={handleChange}
-          type="text"
-          placeholder="username"
-          required
-        />
 
         <div>email:</div>
         <input
@@ -57,20 +49,8 @@ export default function Signup() {
           required
         />
 
-        <div>confirm password:</div>
-        <input
-          onChange={(e) =>
-            e.target.value === user.password
-              ? setCheckPassword(true)
-              : setCheckPassword(false)
-          }
-          type="password"
-          placeholder="confirm password"
-          required
-        />
-
         <br/>
-        <button>Sign-up</button>
+        <button>Login</button>
       </form>
     </div>
   );
